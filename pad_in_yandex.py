@@ -1,5 +1,4 @@
 import time
-import logging
 import requests
 import os
 
@@ -18,7 +17,7 @@ def status_code(code, file_name):
         print(f"Папка -- {file_name} -- создана")
         time.sleep(2)
     elif code == 404:
-        print(f"Папка -- {file_name} -- на Я.Диске не создана")
+        print(f"Папка -- {file_name} -- на Я.Диске не найдена")
         time.sleep(2)
     elif code == 409:
         print(f"Папка -- {file_name} -- на Я.Диске уже существует")
